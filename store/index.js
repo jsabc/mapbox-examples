@@ -1,5 +1,4 @@
 export const state = () => ({
-  accessToken: 'pk.eyJ1Ijoic3o2NjY2NjYiLCJhIjoiY2tuam44NXZzMDEwMzJ1cGV3djR6OHA5cCJ9.2LA3YOPHRLTTB25CvAoIdw',
   exampleList: [
     {
       id: 1,

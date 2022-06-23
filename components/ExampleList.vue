@@ -7,6 +7,7 @@
       :id="item.id"
       :title="item.title"
       :webp="item.webp"
+      @click="handleClick"
     />
     <!-- eslint-enable -->
   </div>
@@ -19,6 +20,14 @@ export default {
     list: {
       type: Array,
       required: true
+    }
+  },
+
+  emits: ['click'],
+
+  methods: {
+    handleClick(value) {
+      this.$emit('click', value)
     }
   }
 }
