@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 gap-2.5">
+  <div class="grid grid-cols-5 gap-2.5">
     <!-- eslint-disable -->
     <ExampleListItem
       v-for="(item, index) in list"

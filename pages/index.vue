@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="static w-full h-80">
-      <h1 class="z-50 fixed top-0 left-0 text-black text-3xl font-bold leading-5 px-2.5 py-5 bg-white opacity-85">
+    <div class="fixed top-0 left-0 right-0 h-72 bg-white z-[100]">
+      <h1 class="z-50 fixed top-0 left-0 text-black text-2xl font-bold leading-4 px-2.5 py-4 bg-white opacity-85">
         {{ pageTitle }}
       </h1>
       <div id="map" />
     </div>
 
-    <div class="w-full mx-auto">
+    <div class="w-full mx-auto mt-72">
       <h2 class="text-lg py-2.5 font-semibold">
-        Mapbox examples(<span class="text-yellow-400">{{ exampleListLength }}</span>)
+        Mapbox-gl examples(<span class="text-yellow-400">{{ exampleListLength }}</span>)
       </h2>
       <ExampleList
         :list="exampleList"
@@ -29,7 +29,7 @@ export default {
     return {
       pageTitle: 'Display a web map using an alternate projection',
       exampleList: this.$store.state.exampleList,
-      mapInstance: null
+      map: null
     }
   },
 
@@ -51,8 +51,8 @@ export default {
 
   methods: {
     renderMap(name) {
-      if (this.mapInstance) {
-        this.mapInstance.remove()
+      if (this.map) {
+        this.map.remove()
       }
       return MapboxGl[name](this)
     },
@@ -67,6 +67,6 @@ export default {
 
 <style scoped>
 #map {
-  @apply w-full h-80 absolute top-0 left-0;
+  @apply w-full h-72 absolute top-0 left-0;
 }
 </style>

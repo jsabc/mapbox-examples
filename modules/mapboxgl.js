@@ -15,7 +15,7 @@ const MapboxGl = {
       projection: 'naturalEarth'
     })
 
-    that.mapInstance = map
+    that.map = map
   },
 
   ['Display a map on a webpage'](that) {
@@ -27,7 +27,7 @@ const MapboxGl = {
       zoom: 9
     })
 
-    that.mapInstance = map
+    that.map = map
   },
 
   ['Accept coordinates as input to a geocoder'](that) {
@@ -39,7 +39,7 @@ const MapboxGl = {
       zoom: 8
     })
 
-    that.mapInstance = map
+    that.map = map
 
     const coordinatesGeocoder = function(query) {
       const matches = query.match(
@@ -107,7 +107,7 @@ const MapboxGl = {
       style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y'
     })
 
-    that.mapInstance = map
+    that.map = map
 
     map.on('load', () => {
       map.addSource('mapbox-dem', {
@@ -131,8 +131,55 @@ const MapboxGl = {
         }
       })
     })
-  }
+  },
 
+  ['Add a 3D model'](that) {
+  },
+
+  ['Add a canvas source'](that) {
+  },
+
+  ['Add a custom style layer'](that) {
+  },
+
+  ['Add a default marker to a web map'](that) {
+  },
+
+  ['Add a fullscreen control to a map'](that) {
+  },
+
+  ['Add a generated icon to the map'](that) {
+  },
+
+  ['Add a geocoder'](that) {
+  },
+
+  ['Add a georeferenced image'](that) {
+  },
+
+  ['Add a gradient sky layer to a map'](that) {
+  },
+
+  ['Add a line to a map using a GeoJSON source'](that) {
+  },
+
+  ['Add a marker using a place name'](that) {
+  },
+
+  ['Add a new layer below labels'](that) {
+  },
+
+  ['Add a pattern to a polygon'](that) {
+  },
+
+  ['Add a polygon to a map using a GeoJSON source'](that) {
+  },
+
+  ['Add a raster image to a map layer'](that) {
+  },
+
+  ['Add a raster tile source'](that) {
+  }
   /* eslint-enable */
 }
 
