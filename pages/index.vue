@@ -5,6 +5,7 @@
         {{ pageTitle }}
       </h1>
       <div id="map" />
+      <canvas id="canvas" />
     </div>
 
     <div class="w-full mx-auto mt-72">
@@ -22,6 +23,8 @@
 <script>
 import MapboxGl from '@/modules/mapboxgl'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
+// import * as THREE from 'three'
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export default {
   name: 'IndexPage',

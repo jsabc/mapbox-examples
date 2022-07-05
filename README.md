@@ -1,4 +1,4 @@
-# mapbox-samples
+# mapbox-Examples
 
 ## Build Setup
 

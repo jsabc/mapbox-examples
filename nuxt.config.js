@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mapbox-samples',
+    title: 'mapbox-Examples',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,6 +13,8 @@ export default {
       { rel: 'stylesheet', href: 'https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' }
     ],
     script: [
+      { type: 'javascript', src: 'https://unpkg.com/three@0.126.0/build/three.min.js' },
+      { type: 'javascript', src: 'https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js' }
     ]
   },
 
